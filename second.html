@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const number = Math.floor(Math.random() * 900) + 100; // Генерируем случайное трехзначное число
+
+        console.log(number); // Выводим на экран сгенерированное число
+
+        const digit_1 = Math.floor(number / 100); // Вычисляем первую цифру числа
+        const digit_2 = Math.floor((number / 10) % 10); // Вычисляем вторую цифру числа
+        const digit_3 = number % 10; // Вычисляем третью цифру числа
+
+        const sum_digits = digit_1 + digit_2 + digit_3; // Вычисляем сумму цифр
+        const product_digits = digit_1 * digit_2 * digit_3; // Вычисляем произведение цифр
+
+        console.log("Сумма:", sum_digits); // Выводим на экран сумму цифр
+        console.log("Произведение:", product_digits); // Выводим на экран произведение цифр
+    </script>
+
+</body>
+
+</html>
